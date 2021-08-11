@@ -27,6 +27,6 @@ public class MyPage extends Activity {
                 Toast.makeText(MyPage.this, "로딩 끝", Toast.LENGTH_SHORT).show();
             }
         });
-        wv.loadUrl("file:///android_asset/www/mypage.jsp");
+        wv.loadUrl("file:///android_asset/www/mypage.html");
     }
 }
