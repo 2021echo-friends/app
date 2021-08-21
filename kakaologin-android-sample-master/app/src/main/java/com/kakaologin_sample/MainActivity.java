@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("GET_KEYHASH",getKeyHash());
 
         btn_login = findViewById(R.id.btn_login);
-        btn_login_out = findViewById(R.id.btn_login_out);
+        //btn_login_out = findViewById(R.id.btn_login_out);
 
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override

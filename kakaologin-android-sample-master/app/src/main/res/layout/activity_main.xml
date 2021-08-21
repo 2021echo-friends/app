@@ -9,41 +9,47 @@
     >
 
     <LinearLayout
-        android:gravity="center"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#BF8BC34A"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="kakao 로그인"
-        android:textStyle="bold"
-        />
-    <ImageButton
-        android:id="@+id/btn_login"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/kakao_login_medium_narrow"
-        />
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="kakao 로그아웃"
-            android:textStyle="bold"
-            />
+            android:textSize="40dp"
+            android:gravity="center"
+            android:text="Let's start Eco step ! 🌱"
+            android:textColor="#FFFFFF"/>
+
         <ImageButton
-            android:id="@+id/btn_login_out"
-            android:layout_marginTop="30dp"
+            android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/kakao_login_medium_narrow"
-            />
+            android:layout_marginTop="30dp"
+            android:padding="0dp"
+            app:srcCompat="@drawable/kakao_login_medium_narrow" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:text="kakao 로그아웃"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_login_out"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:padding="0dp"-->
+<!--            app:srcCompat="@drawable/kakao_login_medium_narrow" />-->
+
     </LinearLayout>
 
 </LinearLayout>
