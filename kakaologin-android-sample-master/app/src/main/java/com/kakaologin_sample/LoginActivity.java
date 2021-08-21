@@ -67,19 +67,19 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        btn_login_out.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UserApiClient.getInstance().logout(error -> {
-                    if (error != null) {
-                        Log.e(TAG, "로그아웃 실패, SDK에서 토큰 삭제됨", error);
-                    }else{
-                        Log.e(TAG, "로그아웃 성공, SDK에서 토큰 삭제됨");
-                    }
-                    return null;
-                });
-            }
-        });
+//        btn_login_out.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                UserApiClient.getInstance().logout(error -> {
+//                    if (error != null) {
+//                        Log.e(TAG, "로그아웃 실패, SDK에서 토큰 삭제됨", error);
+//                    }else{
+//                        Log.e(TAG, "로그아웃 성공, SDK에서 토큰 삭제됨");
+//                    }
+//                    return null;
+//                });
+//            }
+//        });
     }
 
     // 키해시 얻기
