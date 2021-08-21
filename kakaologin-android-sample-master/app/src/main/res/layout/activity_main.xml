@@ -4,52 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+<!--    tools:context=".MainActivity">-->
 
-    <LinearLayout
+    <Button
+        android:id="@+id/scanQR"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#BF8BC34A"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:text="QR코드 스캔하기" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:gravity="center"
-            android:text="Let's start Eco step ! 🌱"
-            android:textColor="#FFFFFF"/>
-
-        <ImageButton
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:padding="0dp"
-            app:srcCompat="@drawable/kakao_login_medium_narrow" />
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="30dp"-->
-<!--            android:text="kakao 로그아웃"-->
-<!--            android:textColor="#FFFFFF"-->
-<!--            android:textStyle="bold" />-->
-
-<!--        <ImageButton-->
-<!--            android:id="@+id/btn_login_out"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="30dp"-->
-<!--            android:padding="0dp"-->
-<!--            app:srcCompat="@drawable/kakao_login_medium_narrow" />-->
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/mypage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="마이페이지" />
 
 </LinearLayout>
