@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        .section {
+            width: 100%;
+        }
+        #blank {
+            height: 20px;
+        }
+        #profile {
+            display: flex;
+            height: 190px;
+        }
+        #profile-image {
+            display:flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        #profile-image .img {
+            width: 130px;
+            height: 130px;
+            border-radius: 20%;
+            background-color: black;
+            margin-right: 40px;
+        }
+        #profile-content {
+            position: relative;
+        }
+        #nickname {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        #level {
+            font-size: 20px;
+        }
+        #graph {
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p#message {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        div#bar {
+            width: 85%;
+            height: 15px;
+            background-color: black;
+            margin-top: 30px;
+        }
+        #board {
+            /* background-color: yellow; */
+            height: 152px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .points {
+            width: 30%;
+            height: 120px;
+            position: relative;
+            background-color: white;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        #used-point {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        .points p {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        #history {
+            height: 304px;
+        }
+        #history-title {
+            font-weight: bold;
+            width: 130px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding-left: 8px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid black;
+            /* text-align: center; */
+        }
+        #history-table {
+            width: 100%;
+            margin-top: 10px;
+            border-spacing: 20px;
+            line-height: 10px;
+        }
+        #history-table td {
+            padding-left: 15px;
+            /* font-weight: bold; */
+        }
+        .table-date {
+            width: 20%;
+        }
+        .table-product {
+            width: 55%;
+        }
+        .table-point {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+<div class="section" id="blank"></div>
+<div class="section" id="profile">
+    <div id="profile-image">
+        <div class="img"></div>
+        <div id="profile-content">
+            <p id="nickname">oroko 님</p>
+            <p id="level">Lv. 4</p>
+        </div>
+    </div>
+</div>
+<div class="section" id="graph">
+    <p id="message">다음 등급까지 에코포인트 35점 남았습니다.</p>
+    <div id="bar"></div>
+</div>
+<div class="section" id="board">
+    <div class="points" id="total-point">획득 포인트<p>50</p></div>
+    <div class="points" id="used-point">사용 포인트 <p>30</p></div>
+    <div class="points" id="leftover-point">잔여 포인트<p>20</p></div>
+</div>
+<div class="section" id="history">
+    <div id="history-title">포인트 내역</div>
+    <table id="history-table">
+        <tr>
+            <td class="table-date">8/11</td>
+            <td class="table-product">탐사수 2L</td>
+            <td class="table-point">6p</td>
+        </tr>
+        <tr>
+            <td class="table-date">8/11</td>
+            <td class="table-product">탐사수 2L</td>
+            <td class="table-point">6p</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

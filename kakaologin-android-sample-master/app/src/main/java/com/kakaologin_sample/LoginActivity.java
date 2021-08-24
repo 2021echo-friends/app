@@ -3,6 +3,7 @@ package com.kakaologin_sample;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -23,12 +24,12 @@ import java.security.NoSuchAlgorithmException;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG="사용자";
-    private ImageButton btn_login, btn_login_out;
+       private ImageButton btn_login, btn_login_out;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         Log.d("GET_KEYHASH",getKeyHash());
 
@@ -63,7 +64,8 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     return null;
                 });
-
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(i);
             }
         });
 

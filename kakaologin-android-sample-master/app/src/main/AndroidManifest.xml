@@ -22,7 +22,12 @@
             android:value="@string/kakao_app_key"/>
 
         <activity android:name=".MainActivity"></activity>
-
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
@@ -32,12 +37,6 @@
                 <data
                     android:host="oauth"
                     android:scheme="f67b592373881b7064f18f91fd325e90"/>
-            </intent-filter>
-        </activity>
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".ScanQR"> </activity>
