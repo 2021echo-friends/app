@@ -23,8 +23,8 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="#FFFFFF"
+                android:layout_weight="1.4"
+                android:background="@drawable/btn_white_circle"
                 android:layout_margin="10dp">
                 <Button
                     android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="6"
                 android:gravity="left|center"
-                android:text="1,224P"
+                android:text=" 1,224P"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp" />
 
@@ -55,21 +55,20 @@
             android:layout_weight="7">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="대충 출석 도장 같은거 ?"/>
+                android:layout_height="match_parent"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:background="#FFFFFF"
             android:gravity="center">
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="오늘의 퀴즈 풀고 포인트 받기"
                 android:layout_margin="30dp"
-                android:textSize="20dp"
+                android:textSize="17dp"
+                android:background="@drawable/btn_quiz"
                 android:stateListAnimator="@null"/>
         </LinearLayout>
 
@@ -128,7 +127,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:text="황아영"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -155,14 +155,18 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="QR코드 인식하기" />
+            android:text="QR코드 인식하기"
+            android:background="#FFFFFF"
+            android:stateListAnimator="@null"/>
 
         <Button
             android:id="@+id/mypage"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="마이페이지"/>
+            android:text="마이페이지"
+            android:background="#FFFFFF"
+            android:stateListAnimator="@null"/>
 
         <TextView
             android:layout_width="match_parent"
