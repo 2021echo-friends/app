@@ -20,11 +20,17 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:background="@mipmap/ic_launcher_round"/>
+                android:background="#FFFFFF"
+                android:layout_margin="10dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/barcode"/>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView2"
@@ -32,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="6"
                 android:gravity="left|center"
-                android:text="   1,224P"
+                android:text="1,224P"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp" />
 
@@ -41,29 +47,30 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:text="="
-                android:textSize="20dp" />
+                android:background="@drawable/menu1" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7.5">
+            android:layout_weight="7">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="대충 출석 도장 같은거 ?"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#FFFFFF">
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+            android:gravity="center">
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="오늘의 출석 퀴즈 풀고 포인트 받기"
-                android:textSize="20dp"/>
+                android:layout_height="match_parent"
+                android:text="오늘의 퀴즈 풀고 포인트 받기"
+                android:layout_margin="30dp"
+                android:textSize="20dp"
+                android:stateListAnimator="@null"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -95,10 +102,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:background="#1B5E20"
-                android:text="X"
-                android:textColor="#FFFFFF"
-                android:textSize="@android:dimen/app_icon_size"/>
+                android:background="@drawable/close" />
         </LinearLayout>
 
         <LinearLayout
@@ -111,7 +115,7 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:src="@mipmap/ic_launcher_round"/>
+                android:src="@drawable/profile_ex"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,11 +138,15 @@
                     android:textSize="15dp" />
             </LinearLayout>
 
-            <ImageButton
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3"
-                android:src="@color/colorPrimaryDark"/>
+                android:layout_weight="3">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/barcode"/>
+            </LinearLayout>
 
         </LinearLayout>
 
