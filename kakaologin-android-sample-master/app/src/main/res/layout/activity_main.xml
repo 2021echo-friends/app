@@ -64,7 +64,7 @@
                 android:layout_gravity="center"
                 android:background="#ffffff"
                 android:stretchColumns="*">
-
+                <!-- 요일 -->
                 <TableRow>
                     <TextView
                         android:layout_margin="1dp"
@@ -145,105 +145,66 @@
                 </TableRow>
 
                 <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="#7EFF0000"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="#80008EFF"></TextView>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-                </TableRow>
-
-                <TableRow>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
                 </TableRow>
 
@@ -253,101 +214,63 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-                </TableRow>
-
-                <TableRow>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
                 </TableRow>
 
@@ -357,49 +280,194 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="50dp"
-                        android:height="50dp">
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="50dp"
+                        android:height="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_margin="1dp">
                     </TextView>
                 </TableRow>
             </TableLayout>
