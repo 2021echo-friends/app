@@ -1,23 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="jquery-barcode.js"></script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=d럇evice-width, initial-scale=1.0">
+     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="jquery-barcode.js"></script>
+     <title>Document</title>
+     <style>
+          body {
+               background-color: rgb(139, 195, 74, 0.75);
+          }
+
+          #barcodebox {
+               position: inherit;
+               background-color: white;
+               height: fit-content;
+               border-radius: 20px;
+          }
+
+          #bcTarget1 {
+               margin-left: 30%;
+          }
+
+          #text1 {
+               margin-top: 75%;
+               margin-bottom: 3%;
+               align-items: center;
+               justify-content: center;
+               display: flex;
+               font-size: 20px;
+          }
+
+          #text2, #text3 {
+               margin-top: 2%;
+               align-items: center;
+               justify-content: center;
+               display: flex;
+               font-size: 15px;
+          }
+     </style>
 </head>
+
 <body>
-
-     <div id="bcTarget1" style="margin-top:30px;"></div>
-     <div id="bcTarget2" style="margin-top:30px;"></div>
-     <div id="bcTarget3" style="margin-top:30px;"></div>
-     <div id="bcTarget4" style="margin-top:30px;"></div>
-     <div id="bcTarget5" style="margin-top:30px;"></div>
+     <div id="text1">
+          Eco Point 🌱
+     </div>
+     <div id="barcodebox">
+          <div id="bcTarget1"></div>
+     </div>
+     <div id="text2">
+          사용 포인트 : 2394점
+     </div>
+     <div id="text3">
+          남은 포인트 : 235점
+     </div>
 </body>
-
 <script type="text/javascript">
-         $("#bcTarget1").barcode("1234567890128", "code128");//value, type, setting=style
-         $("#bcTarget2").barcode("1234567890128", "ean13",{barWidth:2, barHeight:30});
-         $("#bcTarget3").barcode("1234567", "int25",{barWidth:2, barHeight:30});
-         $("#bcTarget4").barcode("1234567890128", "code128",{barWidth:1, barHeight:70,showHRI:true,bgColor:"red"});         
-         $("#bcTarget5").barcode("1234567890128", "datamatrix",{showHRI:false,bgColor:"yellow"});
+     $("#bcTarget1").barcode("1234567890128", "code128");//value, type, setting=style
+     //     $("#bcTarget2").barcode("1234567890128", "ean13",{barWidth:2, barHeight:30});
+     //     $("#bcTarget3").barcode("1234567", "int25",{barWidth:2, barHeight:30});
+     //     $("#bcTarget4").barcode("1234567890128", "code128",{barWidth:1, barHeight:70,showHRI:true,bgColor:"red"});         
+     //     $("#bcTarget5").barcode("1234567890128", "datamatrix",{showHRI:false,bgColor:"yellow"});
 </script>
 
 </html>
