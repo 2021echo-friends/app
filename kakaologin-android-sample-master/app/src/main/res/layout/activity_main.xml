@@ -55,14 +55,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7">
+            android:layout_weight="7"
+            android:background="@drawable/check_background">
             <!--달력 전체 -->
             <TableLayout
                 android:id="@+id/month"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:stretchColumns="*">
+                android:stretchColumns="*"
+                android:layout_marginTop="110dp">
                 <!-- 요일 -->
                 <TableRow>
 
