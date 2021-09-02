@@ -9,7 +9,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', async (req, res) => {
-    // const {token}  =req.query
     const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudEBleGFtcGxlLmNvbSIsImlhdCI6MTYzMDU4Mjg2NSwiZXhwIjoxNjMzMTc0ODY1fQ.S30dYr3Ewo0vTUrCLe2Owmo7U7jl0HCq4-VHH0UK32U"
     const result = await axios({
         url : 'http://54.180.146.9:3001/client/user',
