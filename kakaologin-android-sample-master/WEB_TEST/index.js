@@ -19,6 +19,10 @@ app.get('/', async (req, res) => {
     res.render('mypage', {data});
 })
 
+app.get('/usepoint',(req, res) => {
+    res.render('usepoint');
+})
+
 app.post('/login', async (req, res) => {
     const token = await axios({
         method : 'post',
