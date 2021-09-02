@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.kakao.sdk.user.UserApiClient;
 import com.kakao.sdk.user.model.Account;
@@ -40,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 UserApiClient.getInstance().loginWithKakaoTalk(LoginActivity.this,(oAuthToken, error) -> {
+
                     if (error != null) {
                         Log.e(TAG, "로그인 실패", error);
                     } else if (oAuthToken != null) {
@@ -62,6 +64,8 @@ public class LoginActivity extends AppCompatActivity {
                             return null;
                         });
                     }
+                    Toast.makeText(LoginActivity.this, oAuthToken.getAccessToken(), Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "디버깅" + oAuthToken.getAccessToken());
                     return null;
                 });
                 Intent i = new Intent(LoginActivity.this, MainActivity.class);

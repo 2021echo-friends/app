@@ -12,3 +12,4 @@
 /captures
 .externalNativeBuild
 .cxx
+./WEB_TEST/node_modules
