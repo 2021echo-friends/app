@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@drawable/gradient">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -56,15 +57,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="7"
-            android:background="@drawable/check_background">
+            android:background="@drawable/background2">
             <!--달력 전체 -->
             <TableLayout
                 android:id="@+id/month"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:stretchColumns="*"
-                android:layout_marginTop="110dp">
+                android:layout_marginTop="110dp"
+                android:stretchColumns="*">
                 <!-- 요일 -->
                 <TableRow>
 
@@ -76,74 +77,57 @@
                         android:height="30dp"
                         android:gravity="center"
                         android:text="SUN"
-                        android:textColor="#ffffff">
-                    </TextView>
+                        android:textColor="#ffffff"></TextView>
 
                     <TextView
-                        android:layout_margin="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
                         android:width="50dp"
                         android:height="30dp"
+                        android:gravity="center"
                         android:text="MON"
-                        android:gravity="center"
-                        android:textColor="#ffffff">
-                    </TextView>
+                        android:textColor="#ffffff"></TextView>
 
                     <TextView
-                        android:layout_margin="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
                         android:width="50dp"
                         android:height="30dp"
+                        android:gravity="center"
                         android:text="TUE"
-                        android:gravity="center"
-                        android:textColor="#ffffff">
-                    </TextView>
+                        android:textColor="#ffffff"></TextView>
 
                     <TextView
-                        android:layout_margin="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
                         android:width="50dp"
                         android:height="30dp"
+                        android:gravity="center"
                         android:text="WED"
-                        android:gravity="center"
-                        android:textColor="#ffffff">
-                    </TextView>
+                        android:textColor="#ffffff"></TextView>
 
                     <TextView
-                        android:layout_margin="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
                         android:width="50dp"
                         android:height="30dp"
+                        android:gravity="center"
                         android:text="THU"
-                        android:gravity="center"
-                        android:textColor="#ffffff">
-                    </TextView>
+                        android:textColor="#ffffff"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:width="50dp"
-                        android:height="30dp"
-                        android:text="FRI"
-                        android:gravity="center"
                         android:layout_margin="1dp"
-                        android:textColor="#ffffff">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:width="50dp"
                         android:height="30dp"
+                        android:gravity="center"
                         android:text="SAT"
-                        android:gravity="center"
-                        android:layout_margin="1dp"
-                        android:textColor="#ffffff">
-                    </TextView>
+                        android:textColor="#ffffff"></TextView>
 
                 </TableRow>
 
@@ -156,52 +140,46 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="@drawable/set_radius"
-                        android:gravity="center">
-                    </TextView>
+                        android:gravity="center"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="@drawable/set_radius"
-                        android:gravity="center">
-                    </TextView>
+                        android:gravity="center"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="@drawable/set_radius"
-                        android:gravity="center">
-                    </TextView>
+                        android:gravity="center"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="@drawable/set_attendance"
-                        android:text="1"
-                        android:gravity="center">
-                    </TextView>
+                        android:gravity="center"
+                        android:text="1"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="@drawable/set_attendance"
-                        android:text="2"
-                        android:gravity="center">
-                    </TextView>
+                        android:gravity="center"
+                        android:text="2"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="@drawable/set_radius"
-                        android:text="3"
+                        android:gravity="center"
 
-                        android:gravity="center">
-                    </TextView>
+                        android:text="3"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -210,8 +188,7 @@
                         android:background="@drawable/set_radius"
                         android:gravity="center"
                         android:text="4"
-                        android:textColor="#03A9F4">
-                    </TextView>
+                        android:textColor="#03A9F4"></TextView>
 
                 </TableRow>
 
@@ -224,53 +201,47 @@
                         android:background="@drawable/set_radius"
                         android:gravity="center"
                         android:text="5"
-                        android:textColor="#E62E20">
-                    </TextView>
+                        android:textColor="#E62E20"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="6"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="6"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="7"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="7"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="8"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="8"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="9"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="9"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="10"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="10"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -279,8 +250,7 @@
                         android:background="@drawable/set_radius"
                         android:gravity="center"
                         android:text="11"
-                        android:textColor="#03A9F4">
-                    </TextView>
+                        android:textColor="#03A9F4"></TextView>
                 </TableRow>
 
                 <TableRow>
@@ -288,67 +258,60 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
                         android:background="@drawable/set_radius"
+                        android:gravity="center"
                         android:text="12"
+                        android:textColor="#E62E20"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_margin="1dp"
+                        android:background="@drawable/set_radius"
                         android:gravity="center"
-                        android:textColor="#E62E20">
-                    </TextView>
+                        android:text="13"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="13"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="14"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="14"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="15"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="15"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="16"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="16"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="17"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="17"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:background="@drawable/set_radius"
+                        android:gravity="center"
                         android:text="18"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:textColor="#03A9F4">
-                    </TextView>
+                        android:textColor="#03A9F4"></TextView>
                 </TableRow>
 
                 <TableRow>
@@ -356,131 +319,118 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
                         android:background="@drawable/set_radius"
+                        android:gravity="center"
                         android:text="19"
+                        android:textColor="#E62E20"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_margin="1dp"
+                        android:background="@drawable/set_radius"
                         android:gravity="center"
-                        android:textColor="#E62E20">
-                    </TextView>
+                        android:text="20"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="20"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="21"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="21"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="22"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="22"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="23"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="23"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="24"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="24"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:background="@drawable/set_radius"
+                        android:gravity="center"
                         android:text="25"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:textColor="#03A9F4">
-                    </TextView>
+                        android:textColor="#03A9F4"></TextView>
                 </TableRow>
 
                 <TableRow>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="26"
                         android:layout_margin="1dp"
+                        android:background="@drawable/set_radius"
                         android:gravity="center"
-                        android:textColor="#E62E20">
-                    </TextView>
+                        android:text="26"
+                        android:textColor="#E62E20"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="27"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="27"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="28"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="28"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="29"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="29"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
-                        android:text="30"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"
+                        android:text="30"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/set_radius"
                         android:layout_margin="1dp"
-                        android:gravity="center">
-                    </TextView>
+                        android:background="@drawable/set_radius"
+                        android:gravity="center"></TextView>
                 </TableRow>
 
 
@@ -493,13 +443,24 @@
                 android:layout_weight="1"
                 android:text="이달의 출석 횟수" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:width="50dp"
+                android:height="30dp"
+                android:gravity="center"
+                android:text="FRI"
+                android:textColor="#ffffff"></TextView>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/gradient_reverse">
 
             <Button
                 android:layout_width="match_parent"
@@ -584,6 +545,7 @@
                 android:layout_weight="3">
 
                 <Button
+                    android:id="@+id/qrcreate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/barcode" />
