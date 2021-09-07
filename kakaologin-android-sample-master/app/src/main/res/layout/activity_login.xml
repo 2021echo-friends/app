@@ -21,10 +21,26 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="25dp"
             android:gravity="center"
-            android:text="Let's start Eco step ! 🌱"
-            android:textColor="#FFFFFF"/>
+            android:text="Eco Step"
+            android:fontFamily="@font/gmarketsans_m"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:text="환경보호를 향한 발걸음"
+            android:gravity="center"
+            android:fontFamily="@font/gmarketsans_l"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
 
         <ImageButton
             android:id="@+id/btn_login"

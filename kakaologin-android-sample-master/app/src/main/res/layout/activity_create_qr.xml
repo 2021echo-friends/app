@@ -26,6 +26,7 @@
         android:layout_marginStart="83dp"
         android:layout_marginTop="100dp"
         android:text="가용포인트 : "
+        android:fontFamily="@font/gmarketsans_l"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
@@ -38,6 +39,7 @@
         android:layout_marginTop="100dp"
         android:layout_toEndOf="@+id/textView4"
         android:text="1224"
+        android:fontFamily="@font/gmarketsans_l"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
@@ -52,6 +54,7 @@
         android:layout_marginEnd="83dp"
         android:layout_toEndOf="@+id/wholepoint"
         android:text="P 입니다."
+        android:fontFamily="@font/gmarketsans_l"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
