@@ -82,7 +82,7 @@
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:text="2 회"
+                    android:text="6 회"
                     android:fontFamily="@font/gmarketsans_m"
                     android:background="@color/colorAccent"
                     android:gravity="center"
@@ -239,7 +239,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="1dp"
-                        android:background="@drawable/set_radius"
+                        android:background="@drawable/check"
                         android:gravity="center"
                         android:text="3"
                         android:textColor="@android:color/secondary_text_light"/>
@@ -276,7 +276,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="1dp"
-                        android:background="@drawable/set_radius"
+                        android:background="@drawable/check"
                         android:gravity="center"
                         android:text="6"
                         android:textColor="@android:color/secondary_text_light"/>
@@ -296,7 +296,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="1dp"
-                        android:background="@drawable/set_radius"
+                        android:background="@drawable/check"
                         android:gravity="center"
                         android:text="8"
                         android:textColor="@android:color/secondary_text_light"/>
@@ -306,7 +306,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="1dp"
-                        android:background="@drawable/set_radius"
+                        android:background="@drawable/check"
                         android:gravity="center"
                         android:text="9"
                         android:textColor="@android:color/secondary_text_light"/>
