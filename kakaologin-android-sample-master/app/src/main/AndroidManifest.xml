@@ -50,6 +50,7 @@
             tools:replace="android:screenOrientation"></activity>
         <activity android:name=".CaptureActivity" />
         <activity android:name=".MyPage" />
+        <activity android:name=".DailyQuiz" />
     </application>
 
 </manifest>
