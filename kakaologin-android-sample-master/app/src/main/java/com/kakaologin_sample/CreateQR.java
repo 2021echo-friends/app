@@ -23,7 +23,6 @@ public class CreateQR extends AppCompatActivity {
 
         iv = (ImageView)findViewById(R.id.qrcode);
         text = "12345567890";
-        number = 1234567890;
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         try{
