@@ -46,7 +46,7 @@
             width: 130px;
             height: 130px;
             border-radius: 20%;
-            background: src('../../res/drawable/profile_image.jpg');
+            /* background-image: url('../profile_image.jpg'); */
             margin-right: 40px;
         }
         #profile-content {
@@ -75,18 +75,19 @@
             height: 15px;
             background-color: black;
             margin-top: 30px;
-            background-color: #34a853;
+            background-color: #739E44;
             z-index: 0;
         }
         div#score {
             width: 10px;
             height: 30px;
-            border: 3px solid #34a853;
+            border: 3px solid #739E44;
             background-color: white;
             z-index: 1;
             display: flex;
             position: relative;
             top: -12px;
+            left: -80px;
         }
         #board {
             /* background-color: yellow; */
@@ -109,9 +110,9 @@
             margin-right: 4px;
         }
         .points p {
-            font-size: 30px;
+            font-size: 25px;
             margin-top: 15px;
-            color: #34a853;
+            color: #739E44;
         }
         #history {
             height: 304px;
@@ -123,7 +124,7 @@
             margin-bottom: 10px;
             padding-left: 8px;
             padding-bottom: 5px;
-            border-bottom: 2px solid #34a853;
+            border-bottom: 2px solid #739E44;
             /* text-align: center; */
         }
         #history-table {
@@ -151,7 +152,7 @@
 <div class="section" id="blank"></div>
 <div class="section" id="profile">
     <div id="profile-image">
-        <div class="img"></div>
+        <img src="file:///android_res/drawable/profile_image.png" class="img">
         <div id="profile-content">
             <p id="nickname">황아영 님</p>
             <p id="level">Lv. 4</p>
@@ -159,7 +160,7 @@
     </div>
 </div>
 <div class="section" id="graph">
-    <p id="message">다음 등급까지 776P 남았습니다.</p>
+    <p id="message">다음 등급까지 776 P 남았습니다.</p>
     <div id="bar"></div>
     <div id="score"></div>
 </div>

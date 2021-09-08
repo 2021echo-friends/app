@@ -20,7 +20,8 @@ public class MyPage extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mypage);
-
+        // 큐알코드에서 넘겨준 포인트 적립되는거 해야 함
+        // 근데 웹이라서 .. 디비랑 왔다갔다 해야할 듯 ...
         wv = findViewById(R.id.wv);
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
