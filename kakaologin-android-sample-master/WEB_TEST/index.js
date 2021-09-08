@@ -8,8 +8,8 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', async (req, res) => {
-    const result = await axios.get()
+app.get('/', (req, res) => {
+    // const result = await axios.get()
     res.render('mypage');
 })
 
