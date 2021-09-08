@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 퀴즈</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        #header {
+            background-color: rgb(139, 195, 74, 0.75);
+            height: 48px;
+            color: #ffffff;
+            font-size: 19px;
+            display: flex;
+            align-items: center;
+        }
+
+        #back {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(139, 195, 74, 0.575);
+            text-align: center;
+        }
+
+        #back_link {
+            color: white;
+            font-size: 40px;
+            position: relative;
+            top: -6px;
+        }
+
+        #title {
+            font-size: 15px;
+            padding-left: 14px;
+        }
+
+        #quizbox {
+            background-color: #ffffff;
+            height: 450px;
+            width: 500px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding: 30px 13px;
+        }
+
+        #quiz_content {
+            display: table;
+            text-align: center;
+            justify-content: center;
+            padding: 30px;
+            color: rgba(139, 195, 74, 1);
+        }
+
+        #answer_area {
+            display: block;
+        }
+
+        .btn_quiz {
+            display: table;
+            width: 100%;
+            height: 53px;
+            border: 1px solid #777;
+            border-radius: 53px;
+            font-size: 16px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #content {
+            word-break: break-all;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        #text {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        hr {
+            border: solid 1px rgb(139, 195, 74, 0.75);
+            margin: 20px 150px 50px 150px;
+        }
+
+        .o {
+            color: rgb(0, 0, 255, 0.5);
+        }
+        .o::before {
+            content: "o";
+            font-size: 300px;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+        }
+
+        .x {
+            color: rgb(255, 0, 0, 0.5);
+        }
+        .x::before {
+            content: "x";
+            font-size: 300px;
+            position: absolute;
+            top: 20%;
+            left: 31%;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var flag = true;
+        $(".btn_quiz").click(function(event) {
+            if(flag) {
+                if($(this).hasClass('answer')) $(this).addClass("o");
+                else $(this).addClass("x");
+                flag = false;
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <span id="back">
+            <a href="dailyquiz.html" id="back_link">&lt;</a>
+        </span>
+        <span id="title">데일리 퀴즈</span>
+    </div>
+
+    <!-- body -->
+    <div id="quizbox">
+        <div id="quiz_content">
+            <span id="content">문제는 여기
+        </div>
+        
+        <hr>
+
+        <div id="answer_area">
+            <a class="btn_quiz">
+                <span id="text">
+                    선택지 <strong>1번!!</strong>
+                </span>
+            </a>
+            <a class="btn_quiz answer">
+                <span id="text">
+                    선택지 <strong>2번!!</strong>
+                </span>
+            </a>
+            <a class="btn_quiz">
+                <span id="text">
+                    선택지 <strong>2번!!</strong>
+                </span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
