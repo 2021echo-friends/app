@@ -1,53 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>오늘의 퀴즈</title>
     <style>
-        body{
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        body {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        #header {
             background-color: rgb(139, 195, 74, 0.75);
+            height: 48px;
+            color: #ffffff;
+            font-size: 19px;
+            display: flex;
+            align-items: center;
         }
-        #quizbox{
-            background-color: #ffffff;
-            border-radius: 10px;
-            height: 300px;
-            width: 100%;
-        }
-        #content{
+        #back {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(139, 195, 74, 0.575);
             text-align: center;
         }
-        #titletext{
-            text-align: center;
-            padding-top: 25%;
-            padding-bottom: 5%;
+        #back_link {
             color: white;
+            font-size: 40px;
+            position: relative;
+            top: -6px;
         }
-        #yes{
-            background-color: rgba(0, 128, 0, 0.5);
-            margin-left: 12%;
+        #quizbox {
+            background-color: #ffffff;
+            margin: 8px;
         }
-        #no{
-            background-color: rgb(255, 0, 0, 0.5);
-            margin-right: 10%;
+        #quiz_title {
+            height: 40px;
+            border-bottom: 1px solid #f2f2f2;
+            display: flex;
+            align-items: center;
         }
-        #yes, #no{
+        #title {
+            font-size: 15px;
+            padding-left: 14px;
+        }
+        #quiz_content {
+            display: block;
             text-align: center;
+            justify-content: center;
+        }
+        #btn_quiz {
+            margin: 8px;
             display: inline-block;
-            margin-top: 5%;
-            width: 37%;
-            height: 50px;
-            border-radius: 10px;
+            min-width: 93px;
+            height: 28px;
+            border: 1px solid #e1ebf1;
+            background-color: rgba(139, 195, 74, 0.1);
+            border-radius: 30px;
+            font-size: 13px;
+            line-height: 28px;
+        }
+        #content {
+            padding: 8px;
+            text-align: center;
+            font-size: 19px;
         }
     </style>
 </head>
+
 <body>
-    <div id="titletext"><h1>일일퀴즈</h1></div>
-    <div id="quizbox">
-        <div id="content">2021.08.13</div>
+    <!-- header -->
+    <div id="header">
+        <span id="back">
+            <a id="back_link">&lt;</a>
+        </span>
+        <span id="title">데일리 퀴즈</span>
     </div>
-    <div id="yes">Yes</div>
-    <div id="no">No</div>
+
+    <!-- body -->
+    <div id="quizbox">
+        <div id="quiz_title">
+            <span id="title">오늘의 퀴즈</span>
+        </div>
+        <div id="quiz_content">
+            <div id="content">
+                퀴즈 내용
+                <br>
+                내용
+                <br>
+                내용
+            </div>
+            <a href="quiz_page.html" id="btn_quiz">퀴즈 풀기</a>
+        </div>
+    </div>
+    <div id="quizbox">
+        <div id="quiz_title">
+            <span id="title">정답률 낮은 퀴즈</span>
+        </div>
+        <div id="quiz_content">
+            <div id="content">
+                퀴즈2
+                <br>
+                내용내용
+            </div>
+            <a href="quiz_page.html" id="btn_quiz">퀴즈 풀기</a>
+        </div>
+    </div>
+    <div id="quizbox">
+        <div id="quiz_title">
+            <span id="title">정답률 높은 퀴즈</span>
+        </div>
+        <div id="quiz_content">
+            <div id="content">
+                퀴즈3
+                <br>
+                내용내용
+            </div>
+            <a href="quiz_page.html" id="btn_quiz">퀴즈 풀기</a>
+        </div>
+    </div>
 </body>
+
 </html>
