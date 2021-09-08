@@ -52,6 +52,7 @@ public class ScanQR extends AppCompatActivity {
                 try {
                     //data를 json으로 변환
                     JSONObject obj = new JSONObject(result.getContents());
+
                     uidView.setText(obj.getString("uid"));
                     pointView.setText(obj.getString("point"));
                 } catch (JSONException e) {
