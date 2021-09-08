@@ -1,8 +1,11 @@
 package com.kakaologin_sample;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 //import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,13 +18,23 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 public class CreateQR extends AppCompatActivity {
     private ImageView iv;
     private String text;
-    private Integer number;
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_qr);
 
         iv = (ImageView)findViewById(R.id.qrcode);
+        back = (Button)findViewById(R.id.back_barcode);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CreateQR.this, MainActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+                finish();
+            }
+        });
         text = "12345567890";
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
