@@ -55,8 +55,10 @@ public class ScanQR extends AppCompatActivity {
 
                     uidView.setText(obj.getString("uid"));
                     pointView.setText(obj.getString("point"));
+                    int point = Integer.parseInt(obj.getString("point"));
                     Intent i = new Intent(ScanQR.this, MyPage.class);
                     i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    i.putExtra("added_point", point);
                     startActivity(i);
                     Toast.makeText(this, "적립되었습니다.", Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
