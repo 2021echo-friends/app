@@ -46,7 +46,7 @@ public class ScanQR extends AppCompatActivity {
             if (result.getContents() == null) {
                 Log.d("SCAN FAILED", "nothing scanned");
             } else {
-                Toast.makeText(ScanQR.this, "스캔 완료!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(ScanQR.this, "스캔 완료!", Toast.LENGTH_SHORT).show();
                 Log.d("SCAN SUCCESSED", result.getContents());
                 // QR코드를 읽어서 uid와 point에 저장
                 try {
@@ -55,6 +55,10 @@ public class ScanQR extends AppCompatActivity {
 
                     uidView.setText(obj.getString("uid"));
                     pointView.setText(obj.getString("point"));
+                    Intent i = new Intent(ScanQR.this, MyPage.class);
+                    i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(i);
+                    Toast.makeText(this, "적립되었습니다.", Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(ScanQR.this, result.getContents(), Toast.LENGTH_LONG).show();
