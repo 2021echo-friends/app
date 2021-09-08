@@ -567,15 +567,16 @@
             android:background="@color/colorPrimaryDark">
 
             <Button
+                android:id="@+id/btn_DailyQuiz"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="30dp"
                 android:background="@drawable/btn_quiz"
+                android:fontFamily="@font/gmarketsans_m"
                 android:stateListAnimator="@null"
                 android:text="오늘의 퀴즈 풀고 포인트 받기"
-                android:textSize="17dp"
                 android:textColor="#000000"
-                android:fontFamily="@font/gmarketsans_m"/>
+                android:textSize="17dp" />
         </LinearLayout>
 
     </LinearLayout>

@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
         Button btnCloseDrawer = (Button)findViewById(R.id.btn_CloseDrawer);
         Button qrCode = (Button)findViewById(R.id.qr_code);
         Button myPage = (Button)findViewById(R.id.mypage);
+        Button DailyQuiz = (Button)findViewById(R.id.btn_DailyQuiz);
         smallBarcode = (Button)findViewById(R.id.small_barcode);
         smallBarcode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +67,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, MyPage.class);
+                startActivity(i);
+            }
+        });
+        DailyQuiz.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, DailyQuiz.class);
                 startActivity(i);
             }
         });

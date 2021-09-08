@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 퀴즈</title>
     <style>
+        @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
         * {
             margin: 0;
             padding: 0;
+            font-family: 'GmarketSansMedium';
         }
 
         a {
@@ -52,7 +59,7 @@
         #quizbox {
             background-color: #ffffff;
             height: 450px;
-            width: 500px;
+            width: 100%;
             display: table-cell;
             vertical-align: middle;
             text-align: center;
@@ -105,8 +112,8 @@
             content: "o";
             font-size: 300px;
             position: absolute;
-            top: 20%;
-            left: 25%;
+            top: 0px;
+            left: calc(50% - 83px);
         }
 
         .x {
@@ -116,8 +123,8 @@
             content: "x";
             font-size: 300px;
             position: absolute;
-            top: 20%;
-            left: 31%;
+            top: 0px;
+            left: calc(50% - 75px);
         }
     </style>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
@@ -136,36 +143,24 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div id="header">
-        <span id="back">
-            <a href="dailyquiz.html" id="back_link">&lt;</a>
-        </span>
-        <span id="title">데일리 퀴즈</span>
-    </div>
 
     <!-- body -->
     <div id="quizbox">
         <div id="quiz_content">
-            <span id="content">문제는 여기
+            <span id="content">지난 10년간 환경오염으로 인해 멸종된 동물은 467종이다.
         </div>
         
         <hr>
 
         <div id="answer_area">
-            <a class="btn_quiz">
-                <span id="text">
-                    선택지 <strong>1번!!</strong>
-                </span>
-            </a>
             <a class="btn_quiz answer">
                 <span id="text">
-                    선택지 <strong>2번!!</strong>
+                    맞다
                 </span>
             </a>
             <a class="btn_quiz">
                 <span id="text">
-                    선택지 <strong>2번!!</strong>
+                    아니다
                 </span>
             </a>
         </div>
